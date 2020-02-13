@@ -1,28 +1,27 @@
-var x = 320;
-var y = 400;  //starting position
+var x = 320; //starting position for angled movement
+var y = 400;  
 var x2 = 420;
-var y2 = 150;
-var xspeed2 = 5;
-var yspeed2 = -10;
+var y2 = 150;  
+var xspeed2 = 5;  //set speeds for balls
+var yspeed2 = -10;  
 var xspeed = -15;
-var yspeed = 10;  //speed of the ball
-var z = 1   //var for background
+var yspeed = 10;  
 
 var dir = 1; //set counter to modify ball's position & direction
 var spd = 3; //variable for speed of the ball
 
 var r = 40; //radius of the ball
+let button; 
 
 function setup() {
+  button = createButton('clear'); //setup button to clear background
+  button.position(855, 528);
+  button.mousePressed(reset);
   createCanvas(900, 550);  //canvas for ball to bounce
-  for (var b=0; b<9; ++b)
-  {
-  	for (z=0; z<10; ++z)
-  	{
-      fill ([z*20+b*10, 0, 100, 9]);     //writing color for each ball
-    	ellipse(z*100, b*100, 250, 250);
-  	}
-  }
+}
+
+function reset(){
+background(0,100,100); //clear background when reset
 }
 
 function draw() {
@@ -31,7 +30,7 @@ function draw() {
   
   
   ellipse(x, y, r*2, r*2);  //sets position of the ball and the size
-  ellipse(x2, y2, r, r);
+  ellipse(x2, y2, r, r); //creates another ball
   x += xspeed;
   x2 += xspeed2;
   y += yspeed; 
@@ -56,6 +55,6 @@ function draw() {
     dir = dir * -1;        //make the ball's speed negative, so it moves backwards
   }
   x = x + dir*spd; //move the ball
-      fill(random(255),random(255),random(255)); 
+      fill(random(255),random(255),random(255));  //make the color of the ball random
   
 }

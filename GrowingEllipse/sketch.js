@@ -1,14 +1,31 @@
-var x = 250; //Ended up copying some of your code as I had my editor                crash due to a bad for loop, had a similar idea going for me though
+//Some of your code copied due to an infinite for-loop crash in my code, but mine was virtually the same, just with a few tweaks/rewords. 
+
+var x = 250; 
 var y = 250; 
 var size = 30;            //Creating variables for position & size
 var z = 0
 
+let button;
+
 function setup() {       //Creating background
+  button = createButton('reset'); //creating reset button
+  button.position(455, 478);
+  button.mousePressed(reset);
   createCanvas(500, 500);
   background(255);
   noStroke();
 }
+
+function reset(){ //having reset button completely reset the function & wipe the background
+x = 250; 
+y = 250; 
+size = 30;
+z = 0;
+background(255,255,255);
+}
+
 function draw() {
+  background(255,255,255);
   fill((size/2),0,0);       //setting color of ball proportional to size
   ellipse(x, y, size, size);     //creating the ellipse with variables
   distance = dist(x, y, mouseX, mouseY); //distance between ball and mouse
