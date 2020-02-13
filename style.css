@@ -2,27 +2,27 @@ body {
 	margin: 0;
 	width: 100%;
 	height: 100vh;
-	font-family: "Exo", sans-serif;
-	color: #fff;
-	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab );
-	background-size: 400% 400%;
-	-webkit-animation: gradientBG 10s ease infinite;
+	font-family: "Exo", sans-serif;    /* Changing font of text */
+	color: #fff;                       /* Changing color of text */
+	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab );  /* Setting colors for gradient background */
+	background-size: 400% 400%;        /* Setting size of background */
+	-webkit-animation: gradientBG 10s ease infinite;   /* Linking to gradient background */
 	        animation: gradientBG 10s ease infinite;
 }
 .container {
-	width: 100%;
-	position: absolute;
-	top: 10%;
-	text-align: center;
+	width: 100%;               /* Formatting */
+	position: absolute;    	   /* Formatting */
+	top: 10%;                  /* Distance the title is from the top of the page */
+	text-align: center;        /* Centering the text */
 }
 h1 {
-	font-weight: 900;
+	font-weight: 900;          /* Boldness of the font */
 }
 a {
-	text-decoration: none;
-	color: #212121;
+	text-decoration: none;     /* Getting rid of underlined links */
+	color: #212121;            
 }
-@-webkit-keyframes gradientBG {
+@-webkit-keyframes gradientBG {       /* Configuring gradient background */
 	0% {
 		background-position: 0% 50%;
 	}
@@ -33,7 +33,7 @@ a {
 		background-position: 0% 50%;
 	}
 }
-@keyframes gradientBG {
+@keyframes gradientBG {             /* Configuring gradient background */
 	0% {
 		background-position: 0% 50%;
 	}
