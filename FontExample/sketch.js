@@ -6,5 +6,6 @@ function setup() {
 
 function draw() {
   background(255);
+  fill(0,255,0)
   text("Hey!", 275, 350); //Draw the text in the middle of the screen
 }
