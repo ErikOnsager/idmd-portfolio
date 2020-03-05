@@ -10,6 +10,6 @@ function draw() {
     line(0, i, 390, i);  
   }
   for(j = 10; j < mouseX; j = j + 18){ //drawing lines in X direction based on mouse position
-    line(i,0,i,390);  
+    line(j,0,j,390);  
   }
 }
