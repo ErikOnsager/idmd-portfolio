@@ -1,4 +1,3 @@
-
 function setup() {
   createCanvas(500,500);
 }
@@ -7,7 +6,7 @@ posy = 50
 
 function draw() {
   var d = dist(mouseX, mouseY, posx, posy);
-  if (d < 30) {
+  if (d < 25) {
     fill(255, 0, 0);
   } else {
     fill(0, 255, 0);
