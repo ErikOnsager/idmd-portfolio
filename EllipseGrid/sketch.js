@@ -1,7 +1,7 @@
 function setup() {
   createCanvas(700, 700);
-  widthvar = (width/100)+50
-  heightvar = (height/100)+50
+  widthvar = (width/100)
+  heightvar = (height/100)
 }
 
 function draw() {
@@ -12,7 +12,7 @@ function draw() {
   	for (z=0; z<heightvar; ++z)
   	{
       fill ([z*20+b*10, 0, 100, 9]);     //writing color for each ball
-    	ellipse(z*100, b*100, 100, 100);
+    	ellipse(z*100+50, b*100+50, 100, 100);
   	}
   }
 }
