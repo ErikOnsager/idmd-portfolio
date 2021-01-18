@@ -6,8 +6,8 @@ body {
 	color: #fff;                       /* Changing color of text */
 	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab );  /* Setting colors for gradient background */
 	background-size: 400% 400%;        /* Setting size of background */
-	-webkit-animation: gradientBG 10s ease infinite;   /* Linking to gradient background */
-	        animation: gradientBG 10s ease infinite;
+	-webkit-animation: gradientBG 50s ease infinite;   /* Linking to gradient background */
+	        animation: gradientBG 50s ease infinite;
 }
 .container {
 	width: 100%;               /* Formatting */
